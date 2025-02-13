@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class MainPageEntity {
   final int id;
   final String image;
