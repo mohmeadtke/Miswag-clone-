@@ -1,0 +1,112 @@
+[
+    {
+      "id": "1",
+      "name": "Gaming Laptop",
+      "description": "A high-performance laptop for gaming and work.",
+      "image": "https://example.com/images/laptop.png",
+      "category": "Electronics",
+      "price": "1500.0",
+      "priceAfterDiscount": "1200.0"
+    },
+    {
+      "id": "2",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with customizable buttons.",
+      "image": "https://example.com/images/mouse.png",
+      "category": "Accessories",
+      "price": "50.0",
+      "priceAfterDiscount": "40.0"
+    },
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard",
+      "description": "RGB mechanical keyboard with blue switches.",
+      "image": "https://example.com/images/keyboard.png",
+      "category": "Accessories",
+      "price": "100.0",
+      "priceAfterDiscount": "80.0"
+    },
+    {
+      "id": "4",
+      "name": "Smartphone",
+      "description": "Latest model smartphone with an amazing camera.",
+      "image": "https://example.com/images/phone.png",
+      "category": "Electronics",
+      "price": "1000.0",
+      "priceAfterDiscount": "900.0"
+    },
+    {
+      "id": "5",
+      "name": "Gaming Headset",
+      "description": "Wireless headset with surround sound and noise cancellation.",
+      "image": "https://example.com/images/headset.png",
+      "category": "Accessories",
+      "price": "200.0",
+      "priceAfterDiscount": "180.0"
+    },
+    {
+      "id": "6",
+      "name": "Gaming mous",
+      "description": "Wireless headset with surround sound and noise cancellation.",
+      "image": "https://example.com/images/headset.png",
+      "category": "Accessories",
+      "price": "200.0",
+      "priceAfterDiscount": "0.0"
+    },
+
+    {
+      "id": "7",
+      "name": "Gaming Laptop",
+      "description": "A high-performance laptop for gaming and work.",
+      "image": "https://example.com/images/laptop.png",
+      "category": "Electronics",
+      "price": "1500.0",
+      "priceAfterDiscount": "1200.0"
+    },
+    {
+      "id": "8",
+      "name": "Wireless Mouse",
+      "description": "Ergonomic wireless mouse with customizable buttons.",
+      "image": "https://example.com/images/mouse.png",
+      "category": "Accessories",
+      "price": "50.0",
+      "priceAfterDiscount": "40.0"
+    },
+    {
+      "id": "9",
+      "name": "Mechanical Keyboard",
+      "description": "RGB mechanical keyboard with blue switches.",
+      "image": "https://example.com/images/keyboard.png",
+      "category": "Accessories",
+      "price": "100.0",
+      "priceAfterDiscount": "80.0"
+    },
+    {
+      "id": "10",
+      "name": "Smartphone",
+      "description": "Latest model smartphone with an amazing camera.",
+      "image": "https://example.com/images/phone.png",
+      "category": "Electronics",
+      "price": "1000.0",
+      "priceAfterDiscount": "900.0"
+    },
+    {
+      "id": "11",
+      "name": "Gaming Headset",
+      "description": "Wireless headset with surround sound and noise cancellation.",
+      "image": "https://example.com/images/headset.png",
+      "category": "Accessories",
+      "price": "200.0",
+      "priceAfterDiscount": "180.0"
+    },
+    {
+      "id": "12",
+      "name": "Gaming mous",
+      "description": "Wireless headset with surround sound and noise cancellation.",
+      "image": "https://example.com/images/headset.png",
+      "category": "Accessories",
+      "price": "200.0",
+      "priceAfterDiscount": "0.0"
+    }
+  ]
+  

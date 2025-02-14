@@ -8,7 +8,7 @@ class MainPageUsecase {
 
   MainPageUsecase({required this.mainPageRepo});
 
-  Future<Either<Faillure, MainPageEntity>> call() async {
+  Future<Either<Faillure, List<MainPageEntity>>> call() async {
     return await mainPageRepo.getdata();
   }
 }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:miswag/Features/home/Domain/entity/main_page_entity.dart';
 
 class MainPageModel extends MainPageEntity {
@@ -13,13 +15,18 @@ class MainPageModel extends MainPageEntity {
 
   factory MainPageModel.fromJson(Map<String, dynamic> json) {
     return MainPageModel(
-      id: json['id'] ?? "0",
-      name: json['name'] ?? 'null',
-      description: json['description'] ?? "null",
-      image: json['image'] ?? 'null',
-      category: json['category'] ?? 'null',
-      price: json['price'] ?? '0.0',
-      priceAfterDiscount: json['priceAfterDiscount'] ?? '0.0',
+      id: json['id'],
+      name: json['name'],
+      description: json['description'],
+      image: json['image'],
+      category: json['category'],
+      price: double.parse(json['price']),
+      priceAfterDiscount: double.parse(json['priceAfterDiscount']),
     );
+  }
+  // Method to parse a list of products from JSON
+  List<MainPageModel> parseProducts(String jsonData) {
+    final List<dynamic> decoded = jsonDecode(jsonData);
+    return decoded.map((item) => MainPageModel.fromJson(item)).toList();
   }
 }
