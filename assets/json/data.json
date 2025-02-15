@@ -106,7 +106,7 @@
       "image": "https://example.com/images/headset.png",
       "category": "Accessories",
       "price": "200.0",
-      "priceAfterDiscount": "0.0"
+      "priceAfterDiscount": "200"
     }
   ]
   

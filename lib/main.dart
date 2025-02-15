@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Miswag',
+      title: 'Miswag app',
       routes: {
         '/': (context) => BlocProvider(
               create: (context) => di.sl<MainPageBloc>(),
