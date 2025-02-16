@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => BlocProvider(
               create: (context) => di.sl<MainPageBloc>(),
-              child: const HomePage(),
+              child: HomePage(),
             ),
       },
     );

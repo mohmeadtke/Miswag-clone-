@@ -27,9 +27,9 @@ class DeeplinkButton extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                height: 40, // Set your desired height
+                height: 90, // Set your desired height
                 decoration: BoxDecoration(
-                  color: Colors.blue, // Background color of the container
+                  color: Colors.grey[50], // Background color of the container
                   borderRadius: BorderRadius.circular(10), // Rounded corners
                   image: const DecorationImage(
                     image:
