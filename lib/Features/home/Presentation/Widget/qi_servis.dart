@@ -5,6 +5,8 @@ class DeeplinkButton extends StatelessWidget {
   final String playStoreUrl =
       'https://play.google.com/store/apps/details?id=tech.enjaz.qicardservices&hl=ar';
 
+  const DeeplinkButton({super.key});
+
   Future<void> _launchURL() async {
     final Uri uri =
         Uri.parse(playStoreUrl); // Convert the URL string to a Uri object

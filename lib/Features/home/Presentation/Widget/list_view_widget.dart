@@ -22,7 +22,7 @@ class ListViewWidget extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal, // Make it scroll horizontally
                 primary: false,
-                itemCount: data.length,
+                itemCount: 10,
                 itemBuilder: (context, index) {
                   MainPageEntity product = data[index];
 
@@ -35,10 +35,10 @@ class ListViewWidget extends StatelessWidget {
                             100;
                   }
                   String getFirst25Characters(String input) {
-                    if (input.length <= 25) {
+                    if (input.length == 25) {
                       return input;
                     } else {
-                      return "${input.substring(0, 24)}...";
+                      return "${input.substring(0, 25)}...";
                     }
                   }
 
@@ -156,8 +156,6 @@ class ListViewWidget extends StatelessWidget {
                               padding:
                                   const EdgeInsets.all(4.0), // Reduced padding
                               child: Column(
-                                mainAxisSize:
-                                    MainAxisSize.min, // Prevent stretching
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text.rich(TextSpan(children: [
@@ -197,10 +195,6 @@ class ListViewWidget extends StatelessWidget {
                                   else
                                     // Show both prices if there's a discount
                                     Column(
-                                      // mainAxisAlignment:
-                                      //     MainAxisAlignment.spaceBetween,
-                                      // crossAxisAlignment:
-                                      //     CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "${product.price} IQD",
@@ -211,16 +205,12 @@ class ListViewWidget extends StatelessWidget {
                                                 TextDecoration.lineThrough,
                                           ),
                                         ),
-                                        // const Spacer(), // Reduced spacing
-                                        Padding(
-                                          padding: const EdgeInsets.only(),
-                                          child: Text(
-                                            "${product.priceAfterDiscount} IQD",
-                                            style: const TextStyle(
-                                              fontSize: 12, // Smaller font size
-                                              color: Colors.black,
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                        Text(
+                                          "${product.priceAfterDiscount} IQD",
+                                          style: const TextStyle(
+                                            fontSize: 12, // Smaller font size
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
                                           ),
                                         ),
                                       ],

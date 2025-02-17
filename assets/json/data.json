@@ -87,7 +87,7 @@
     "image": "https://example.com/images/phone.png",
     "category": "Electronics",
     "price": "1000.0",
-    "priceAfterDiscount": "900.0"
+    "priceAfterDiscount": "1000.0"
   },
   {
     "id": "11",
