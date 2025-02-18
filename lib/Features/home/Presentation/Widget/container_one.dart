@@ -6,7 +6,7 @@ class ContainerOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 4, right: 4),
+      padding: const EdgeInsets.only(left: 8, right: 4),
       child: Row(
         children: [
           rowcontainer(),

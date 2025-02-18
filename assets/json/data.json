@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Gaming Laptop",
     "description": "A high-performance laptop for gaming and work.",
-    "image": "https://example.com/images/laptop.png",
+    "image": "assets/image/chat.png",
     "category": "Electronics",
     "price": "1500.0",
     "priceAfterDiscount": "1500.0"
@@ -12,7 +12,7 @@
     "id": "2",
     "name": "Wireless Mouse",
     "description": "Ergonomic wireless mouse with customizable buttons.",
-    "image": "https://example.com/images/mouse.png",
+    "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "50.0",
     "priceAfterDiscount": "40.0"
@@ -21,7 +21,7 @@
     "id": "3",
     "name": "Mechanical Keyboard",
     "description": "RGB mechanical keyboard with blue switches.",
-    "image": "https://example.com/images/keyboard.png",
+    "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "100.0",
     "priceAfterDiscount": "80.0"
@@ -30,7 +30,7 @@
     "id": "4",
     "name": "Smartphone",
     "description": "Latest model smartphone with an amazing camera.",
-    "image": "https://example.com/images/phone.png",
+    "image": "assets/image/chat.png",
     "category": "Electronics",
     "price": "1000.0",
     "priceAfterDiscount": "900.0"
@@ -39,7 +39,7 @@
     "id": "5",
     "name": "Gaming Headset",
     "description": "Wireless headset with surround sound and noise cancellation.",
-    "image": "https://example.com/images/headset.png",
+    "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "200.0",
     "priceAfterDiscount": "180.0"
@@ -48,135 +48,46 @@
     "id": "6",
     "name": "Gaming Mouse",
     "description": "High-precision gaming mouse with adjustable DPI.",
-    "image": "https://example.com/images/mouse.png",
+    "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "80.0",
     "priceAfterDiscount": "70.0"
   },
   {
     "id": "7",
-    "name": "Gaming Laptop",
-    "description": "A high-performance laptop for gaming and work.",
-    "image": "https://example.com/images/laptop.png",
-    "category": "Electronics",
-    "price": "1500.0",
-    "priceAfterDiscount": "1200.0"
-  },
-  {
-    "id": "8",
-    "name": "Wireless Mouse",
-    "description": "Ergonomic wireless mouse with customizable buttons.",
-    "image": "https://example.com/images/mouse.png",
-    "category": "Accessories",
-    "price": "50.0",
-    "priceAfterDiscount": "40.0"
-  },
-  {
-    "id": "9",
-    "name": "Mechanical Keyboard",
-    "description": "RGB mechanical keyboard with blue switches.",
-    "image": "https://example.com/images/keyboard.png",
-    "category": "Accessories",
-    "price": "100.0",
-    "priceAfterDiscount": "80.0"
-  },
-  {
-    "id": "10",
-    "name": "Smartphone",
-    "description": "Latest model smartphone with an amazing camera.",
-    "image": "https://example.com/images/phone.png",
-    "category": "Electronics",
-    "price": "1000.0",
-    "priceAfterDiscount": "1000.0"
-  },
-  {
-    "id": "11",
-    "name": "Gaming Headset",
-    "description": "Wireless headset with surround sound and noise cancellation.",
-    "image": "https://example.com/images/headset.png",
-    "category": "Accessories",
-    "price": "200.0",
-    "priceAfterDiscount": "180.0"
-  },
-  {
-    "id": "12",
-    "name": "Gaming Mouse",
-    "description": "High-precision gaming mouse with adjustable DPI.",
-    "image": "https://example.com/images/mouse.png",
-    "category": "Accessories",
-    "price": "80.0",
-    "priceAfterDiscount": "70.0"
-  },
-  {
-    "id": "13",
     "name": "4K Monitor",
     "description": "27-inch 4K monitor with HDR support.",
-    "image": "https://example.com/images/monitor.png",
+    "image": "assets/image/chat.png",
     "category": "Electronics",
     "price": "500.0",
     "priceAfterDiscount": "450.0"
   },
   {
-    "id": "14",
+    "id": "8",
     "name": "External Hard Drive",
     "description": "2TB portable external hard drive.",
-    "image": "https://example.com/images/harddrive.png",
+    "image": "assets/image/chat.png",
     "category": "Storage",
     "price": "120.0",
     "priceAfterDiscount": "100.0"
   },
   {
-    "id": "15",
+    "id": "9",
     "name": "Bluetooth Speaker",
     "description": "Portable Bluetooth speaker with 20-hour battery life.",
-    "image": "https://example.com/images/speaker.png",
+    "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "80.0",
     "priceAfterDiscount": "70.0"
   },
   {
-    "id": "16",
+    "id": "10",
     "name": "Smart Watch",
     "description": "Smart watch with heart rate monitoring and GPS.",
-    "image": "https://example.com/images/smartwatch.png",
+    "image": "assets/image/chat.png",
     "category": "Wearables",
     "price": "250.0",
     "priceAfterDiscount": "220.0"
-  },
-  {
-    "id": "17",
-    "name": "Tablet",
-    "description": "10-inch tablet with high-resolution display.",
-    "image": "https://example.com/images/tablet.png",
-    "category": "Electronics",
-    "price": "400.0",
-    "priceAfterDiscount": "350.0"
-  },
-  {
-    "id": "18",
-    "name": "Noise-Cancelling Headphones",
-    "description": "Over-ear headphones with active noise cancellation.",
-    "image": "https://example.com/images/headphones.png",
-    "category": "Accessories",
-    "price": "300.0",
-    "priceAfterDiscount": "270.0"
-  },
-  {
-    "id": "19",
-    "name": "USB-C Hub",
-    "description": "6-in-1 USB-C hub with HDMI and SD card reader.",
-    "image": "https://example.com/images/usbhub.png",
-    "category": "Accessories",
-    "price": "40.0",
-    "priceAfterDiscount": "35.0"
-  },
-  {
-    "id": "20",
-    "name": "Wireless Charger",
-    "description": "Fast wireless charger for smartphones.",
-    "image": "https://example.com/images/charger.png",
-    "category": "Accessories",
-    "price": "30.0",
-    "priceAfterDiscount": "25.0"
   }
 ]
+

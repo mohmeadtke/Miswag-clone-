@@ -21,30 +21,20 @@ class DeeplinkButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        onTap: _launchURL,
-        child: Row(
-          children: [
-            const SizedBox(
-              width: 5,
+      onTap: _launchURL,
+      child: Expanded(
+        child: Container(
+          height: 90, // Set your desired height
+          decoration: BoxDecoration(
+            color: Colors.grey[300], // Background color of the container
+            // borderRadius: BorderRadius.circular(10), // Rounded corners
+            image: const DecorationImage(
+              image: AssetImage('assets/image/qi.png'), // Path to your image
+              fit: BoxFit.cover, // Adjust the image fit
             ),
-            Expanded(
-              child: Container(
-                height: 90, // Set your desired height
-                decoration: BoxDecoration(
-                  color: Colors.grey[50], // Background color of the container
-                  borderRadius: BorderRadius.circular(10), // Rounded corners
-                  image: const DecorationImage(
-                    image:
-                        AssetImage('assets/image/qi.png'), // Path to your image
-                    fit: BoxFit.cover, // Adjust the image fit
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(
-              width: 5,
-            )
-          ],
-        ));
+          ),
+        ),
+      ),
+    );
   }
 }

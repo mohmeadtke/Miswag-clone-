@@ -63,15 +63,16 @@ class ListViewWidget extends StatelessWidget {
                               children: [
                                 Container(
                                   height: 100, // Reduced height for the image
-                                  decoration: const BoxDecoration(
-                                    borderRadius: BorderRadius.vertical(
+                                  decoration: BoxDecoration(
+                                    borderRadius: const BorderRadius.vertical(
                                       top: Radius.circular(8),
                                     ),
                                     image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: AssetImage(
-                                          "assets/image/chat.png"), // Placeholder image
-                                    ),
+                                        fit: BoxFit.fill,
+                                        image: AssetImage(product.image)
+                                        // NetworkImage(
+                                        //     product.image) // Placeholder image
+                                        ),
                                   ),
                                 ),
                                 // Discount Percentage Badge
