@@ -34,9 +34,9 @@ class ContainerOne extends StatelessWidget {
         // color: Colors.blue,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Colors.black,
+          color: Colors.grey,
           image: const DecorationImage(
-            image: AssetImage("assets/image/chat.png"),
+            image: AssetImage("assets/image/mis.jpg"),
           ),
         ),
       ),

@@ -15,7 +15,10 @@ class AppleContainers extends StatelessWidget {
           Container(
             height: 200,
             width: double.infinity,
-            color: Colors.black,
+            decoration: const BoxDecoration(
+                color: Colors.grey,
+                image:
+                    DecorationImage(image: AssetImage("assets/image/mis.jpg"))),
           ),
           const SizedBox(
             height: 20,
@@ -45,7 +48,7 @@ class AppleContainers extends StatelessWidget {
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
             image: const DecorationImage(
-                image: AssetImage("assets/image/chat.png"))),
+                image: AssetImage("assets/image/mis.jpg"))),
       ),
     );
   }

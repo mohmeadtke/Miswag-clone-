@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
-
-  const AppBarWidget({super.key})
+  final int pageNum;
+  const AppBarWidget({super.key, required this.pageNum})
       : preferredSize = const Size.fromHeight(kToolbarHeight);
 
   @override
@@ -13,16 +13,28 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       forceMaterialTransparency: true,
       backgroundColor: Colors.white,
       actions: [
-        InkWell(
-          onTap: () {
-            //! go to faverot page
-          },
-          child: Image.asset(
-            "assets/image/heart.png",
-            width: 25,
-            height: 30,
+        if (pageNum == 2)
+          InkWell(
+            onTap: () {
+              //! go to faverot page
+            },
+            child: Image.asset(
+              "assets/image/cart.png",
+              width: 25,
+              height: 30,
+            ),
           ),
-        ),
+        if (pageNum == 1)
+          InkWell(
+            onTap: () {
+              //! go to faverot page
+            },
+            child: Image.asset(
+              "assets/image/heart.png",
+              width: 25,
+              height: 30,
+            ),
+          ),
         const SizedBox(width: 15),
         InkWell(
           onTap: () {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:miswag/Features/Categories/Presentation/pages/categories_page.dart';
 import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
-import 'package:miswag/home_page.dart';
+import 'package:miswag/bottom_bar.dart';
 import 'ingectchin.dart' as di;
 
 void main() {
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Miswag app',
       routes: {
+        '/1': (context) => const CategoriesPage(),
         '/': (context) => BlocProvider(
               create: (context) => di.sl<MainPageBloc>(),
-              child: HomePage(),
+              child: const MainScreen(),
             ),
       },
     );

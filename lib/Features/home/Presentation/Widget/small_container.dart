@@ -18,7 +18,7 @@ class SmallContainer extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               image: const DecorationImage(
-                  image: AssetImage("assets/image/chat.png"))),
+                  image: AssetImage("assets/image/mis.jpg"))),
         ),
       ),
     );

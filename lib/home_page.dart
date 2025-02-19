@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:miswag/Features/home/Presentation/Widget/app_bar_widget.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/home/Presentation/Widget/big_container.dart';
 import 'package:miswag/Features/home/Presentation/Widget/brand_list_widgit.dart';
 import 'package:miswag/Features/home/Presentation/Widget/list_view_widget.dart';
 import 'package:miswag/Features/home/Presentation/Widget/main_text_widget.dart';
 import 'package:miswag/Features/home/Presentation/Widget/qi_servis.dart';
-import 'package:miswag/Features/home/Presentation/Widget/see_more_widget.dart';
+import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
+import 'package:miswag/core/Widget/app_bar_widget.dart';
 import 'Features/home/Presentation/Widget/Container_two.dart';
 import 'Features/home/Presentation/Widget/apple_containers.dart';
 import 'Features/home/Presentation/Widget/container_one.dart';
@@ -21,23 +22,20 @@ class HomePage extends StatelessWidget {
     const ContainerOne(),
     const MainTextWidget(text: "الاقسام"),
     const SectionsListviewWidget(),
-    const SeeMoreWidget(text: 'وصلت حديثا'),
-    const ListViewWidget(),
+    const ListViewWidget(text: 'وصلت حديثا'),
     const AppleContainers(),
     const SmallContainer(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SeeMoreWidget(text: 'التخفيضات والعروض'),
-    const ListViewWidget(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const ListViewWidget(text: 'التخفيضات والعروض'),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const ContainerTwo(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const MainTextWidget(text: "جديد في ماركات العنايه بالبشره"),
     const ContainerTwo(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SeeMoreWidget(text: ' الجديد في الاجهزه المنزليه'),
-    const ListViewWidget(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const ListViewWidget(text: ' الجديد في الاجهزه المنزليه'),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const ContainerTwo(),
     const SizedBox(height: 8),
     const ContainerTwo(),
@@ -46,35 +44,38 @@ class HomePage extends StatelessWidget {
     const ContainerOne(),
     const MainTextWidget(text: "تسوق الهواتف الذكيه حسب الماركه"),
     //! phoin list view
-    const SeeMoreWidget(text: "تخفيضات الالكترونيات"),
-    const ListViewWidget(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SeeMoreWidget(text: "الجديد في المنزل والمطبخ"),
-    const ListViewWidget(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
+    const ListViewWidget(text: "تخفيضات الالكترونيات"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const ListViewWidget(text: "الجديد في المنزل والمطبخ"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
 
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SectionsListviewWidget(), //! myby i shoud change htis
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SeeMoreWidget(text: "العنايه بالفم"),
-    const ListViewWidget(),
-    const BigContainer(imageUrl: "assets/image/chat.png"),
-    const SeeMoreWidget(text: "ديكور المنزل"),
-    const ListViewWidget(),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const SectionsListviewWidget(), //! myby i shoud change this
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const ListViewWidget(text: "العنايه بالفم"),
+    const BigContainer(imageUrl: "assets/image/mis.jpg"),
+    const ListViewWidget(text: "ديكور المنزل"),
     const ContainerTwo(),
   ];
+
+  Future<void> _refreshData() async {
+    await Future.delayed(const Duration(seconds: 2)); // Simulate network delay
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: const AppBarWidget(),
-      body: Scaffold(
-        backgroundColor: Colors.grey[300],
-        body: Column(
+      appBar: const AppBarWidget(
+        pageNum: 1,
+      ),
+      // Remove the inner Scaffold if possible.
+      body: Container(
+        color: Colors.grey[300],
+        child: Column(
           children: [
             const SearchBarWidget(),
             Container(
@@ -82,13 +83,19 @@ class HomePage extends StatelessWidget {
               color: Colors.white,
             ), // Spacer
 
-            // Main content
+            // Wrap RefreshIndicator with Expanded to provide bounded height.
             Expanded(
-              child: ListView.builder(
-                itemCount: widgetList.length,
-                itemBuilder: (context, index) {
-                  return widgetList[index];
+              child: RefreshIndicator(
+                onRefresh: () async {
+                  _refreshData;
+                  BlocProvider.of<MainPageBloc>(context).add(LoadDataEvent());
                 },
+                child: ListView.builder(
+                  itemCount: widgetList.length,
+                  itemBuilder: (context, index) {
+                    return widgetList[index];
+                  },
+                ),
               ),
             ),
           ],

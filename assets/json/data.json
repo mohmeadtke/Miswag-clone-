@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Gaming Laptop",
     "description": "A high-performance laptop for gaming and work.",
-    "image": "assets/image/chat.png",
+    "image": "assets/image/mis.jpg",
     "category": "Electronics",
     "price": "1500.0",
     "priceAfterDiscount": "1500.0"
@@ -12,7 +12,7 @@
     "id": "2",
     "name": "Wireless Mouse",
     "description": "Ergonomic wireless mouse with customizable buttons.",
-    "image": "assets/image/chat.png",
+    "image": "assets/image/mis.jpg",
     "category": "Accessories",
     "price": "50.0",
     "priceAfterDiscount": "40.0"
@@ -21,7 +21,7 @@
     "id": "3",
     "name": "Mechanical Keyboard",
     "description": "RGB mechanical keyboard with blue switches.",
-    "image": "assets/image/chat.png",
+    "image": "assets/image/mis.jpg",
     "category": "Accessories",
     "price": "100.0",
     "priceAfterDiscount": "80.0"
@@ -30,7 +30,7 @@
     "id": "4",
     "name": "Smartphone",
     "description": "Latest model smartphone with an amazing camera.",
-    "image": "assets/image/chat.png",
+    "image": "assets/image/mis.jpg",
     "category": "Electronics",
     "price": "1000.0",
     "priceAfterDiscount": "900.0"
