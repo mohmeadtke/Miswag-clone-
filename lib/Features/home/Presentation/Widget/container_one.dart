@@ -36,8 +36,7 @@ class ContainerOne extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           color: Colors.grey,
           image: const DecorationImage(
-            image: AssetImage("assets/image/mis.jpg"),
-          ),
+              image: AssetImage("assets/image/mis.jpg"), fit: BoxFit.fill),
         ),
       ),
     );

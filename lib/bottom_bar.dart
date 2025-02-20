@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/Categories/Presentation/pages/categories_page.dart';
 import 'package:miswag/Features/Categories/Presentation/state_mangment/bloc/button_bloc.dart';
+import 'package:miswag/Features/More/Presentation/pages/more_page.dart';
 import 'package:miswag/home_page.dart';
 
 class MainScreen extends StatefulWidget {
@@ -19,10 +20,10 @@ class _MainScreenState extends State<MainScreen> {
     HomePage(),
     BlocProvider(
       create: (context) => ButtonBloc(),
-      child: CategoriesPage(),
+      child: const CategoriesPage(),
     ),
     CartScreen(),
-    MoreScreen(),
+    MorePage(),
   ];
 
   void _onItemTapped(int index) {

@@ -17,8 +17,9 @@ class AppleContainers extends StatelessWidget {
             width: double.infinity,
             decoration: const BoxDecoration(
                 color: Colors.grey,
-                image:
-                    DecorationImage(image: AssetImage("assets/image/mis.jpg"))),
+                image: DecorationImage(
+                    image: AssetImage("assets/image/mis.jpg"),
+                    fit: BoxFit.fill)),
           ),
           const SizedBox(
             height: 20,
