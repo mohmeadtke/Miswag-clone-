@@ -7,6 +7,7 @@ class NotificationsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: const AppBarWidget(pageNum: 3),
       body: Center(
         child: Container(

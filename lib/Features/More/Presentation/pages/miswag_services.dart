@@ -8,6 +8,7 @@ class MiswagServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBarWidget(pageNum: 0),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),

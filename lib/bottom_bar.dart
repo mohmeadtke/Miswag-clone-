@@ -5,6 +5,8 @@ import 'package:miswag/Features/Categories/Presentation/state_mangment/bloc/butt
 import 'package:miswag/Features/More/Presentation/pages/more_page.dart';
 import 'package:miswag/home_page.dart';
 
+import 'Features/Cart/Presentation/pages/cart_page.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -22,8 +24,8 @@ class _MainScreenState extends State<MainScreen> {
       create: (context) => ButtonBloc(),
       child: const CategoriesPage(),
     ),
-    CartScreen(),
-    MorePage(),
+    const CartPage(),
+    const MorePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -40,6 +42,7 @@ class _MainScreenState extends State<MainScreen> {
         children: _pages,
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
@@ -65,19 +68,5 @@ class _MainScreenState extends State<MainScreen> {
         ],
       ),
     );
-  }
-}
-
-class CartScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: Text("Cart Screen", style: TextStyle(fontSize: 24)));
-  }
-}
-
-class MoreScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: Text("More Screen", style: TextStyle(fontSize: 24)));
   }
 }

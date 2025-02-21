@@ -18,12 +18,14 @@ class BeautyPage extends StatelessWidget {
       newMethod2("المكياج", "مكياج الوجه", "مكياج الشفاه", "مزيلات المكياج",
           "ادوات المكياج", co("مكياج العيون"), co("مكياج الحواجب")),
     ];
-    return ListView.builder(
-      scrollDirection: Axis.vertical,
-      itemCount: listt.length,
-      itemBuilder: (BuildContext context, int index) {
-        return listt[index];
-      },
+    return Scaffold(
+      body: ListView.builder(
+        scrollDirection: Axis.vertical,
+        itemCount: listt.length,
+        itemBuilder: (BuildContext context, int index) {
+          return listt[index];
+        },
+      ),
     );
   }
 

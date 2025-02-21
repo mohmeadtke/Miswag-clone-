@@ -38,7 +38,7 @@
   {
     "id": "5",
     "name": "Gaming Headset",
-    "description": "Wireless headset with surround sound and noise cancellation.",
+    "description": "Wireless headset with surround sound and noise .",
     "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "200.0",
@@ -74,7 +74,7 @@
   {
     "id": "9",
     "name": "Bluetooth Speaker",
-    "description": "Portable Bluetooth speaker with 20-hour battery life.",
+    "description": "Portable Bluetooth speaker with 20-hour battery .",
     "image": "assets/image/chat.png",
     "category": "Accessories",
     "price": "80.0",

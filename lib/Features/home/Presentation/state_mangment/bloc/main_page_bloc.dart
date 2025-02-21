@@ -14,7 +14,7 @@ class MainPageBloc extends Bloc<MainPageEvent, MainPageState> {
     on<LoadDataEvent>((event, emit) async {
       emit(LodingState());
       final failureOrMainPageEntity = await mainPageUsecase.call();
-      emit(failureOrMainPageEntity.fold(
+      emit(await failureOrMainPageEntity.fold(
           (failure) => FailureState(message: failure.toString()),
           (data) => SuccessState(mainPageEntity: data)));
     });

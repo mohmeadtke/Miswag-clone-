@@ -61,6 +61,7 @@ class MorePage extends StatelessWidget {
     ];
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: const AppBarWidget(pageNum: 2),
       body: Scaffold(
         backgroundColor: Colors.grey[200],

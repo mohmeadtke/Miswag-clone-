@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/home/Presentation/Widget/big_container.dart';
 import 'package:miswag/Features/home/Presentation/Widget/brand_list_widgit.dart';
-import 'package:miswag/Features/home/Presentation/Widget/list_view_widget.dart';
 import 'package:miswag/Features/home/Presentation/Widget/main_text_widget.dart';
 import 'package:miswag/Features/home/Presentation/Widget/qi_servis.dart';
 import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
@@ -10,6 +9,7 @@ import 'package:miswag/core/Widget/app_bar_widget.dart';
 import 'Features/home/Presentation/Widget/Container_two.dart';
 import 'Features/home/Presentation/Widget/apple_containers.dart';
 import 'Features/home/Presentation/Widget/container_one.dart';
+import 'Features/home/Presentation/Widget/listViewWidget/bloc_builder_widget.dart';
 import 'Features/home/Presentation/Widget/search_bar_widget.dart';
 import 'Features/home/Presentation/Widget/sections_listview_widget.dart';
 import 'Features/home/Presentation/Widget/small_container.dart';
@@ -22,18 +22,18 @@ class HomePage extends StatelessWidget {
     const ContainerOne(),
     const MainTextWidget(text: "الاقسام"),
     const SectionsListviewWidget(),
-    const ListViewWidget(text: 'وصلت حديثا'),
+    const BlocBuilderWidget(text: 'وصلت حديثا'),
     const AppleContainers(),
     const SmallContainer(),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const ListViewWidget(text: 'التخفيضات والعروض'),
+    const BlocBuilderWidget(text: 'التخفيضات والعروض'),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const ContainerTwo(),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const MainTextWidget(text: "جديد في ماركات العنايه بالبشره"),
     const ContainerTwo(),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const ListViewWidget(text: ' الجديد في الاجهزه المنزليه'),
+    const BlocBuilderWidget(text: ' الجديد في الاجهزه المنزليه'),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const ContainerTwo(),
@@ -44,20 +44,20 @@ class HomePage extends StatelessWidget {
     const ContainerOne(),
     const MainTextWidget(text: "تسوق الهواتف الذكيه حسب الماركه"),
     //! phoin list view
-    const ListViewWidget(text: "تخفيضات الالكترونيات"),
+    const BlocBuilderWidget(text: "تخفيضات الالكترونيات"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const ListViewWidget(text: "الجديد في المنزل والمطبخ"),
+    const BlocBuilderWidget(text: "الجديد في المنزل والمطبخ"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
 
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const SectionsListviewWidget(), //! myby i shoud change this
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const ListViewWidget(text: "العنايه بالفم"),
+    const BlocBuilderWidget(text: "العنايه بالفم"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const ListViewWidget(text: "ديكور المنزل"),
+    const BlocBuilderWidget(text: "ديكور المنزل"),
     const ContainerTwo(),
   ];
 

@@ -10,8 +10,8 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      forceMaterialTransparency: true,
       backgroundColor: Colors.white,
+      forceMaterialTransparency: true,
       actions: (pageNum == 0)
           ? []
           : [

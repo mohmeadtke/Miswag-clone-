@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "129572857135",
+    "project_id": "miswag-clone",
+    "storage_bucket": "miswag-clone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129572857135:android:5e2e7dbc68ffc8d2ed2dda",
+        "android_client_info": {
+          "package_name": "com.example.miswag"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIlP-QSXpXakQ2wlaPlIYKdXI9ZRjSgp4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
