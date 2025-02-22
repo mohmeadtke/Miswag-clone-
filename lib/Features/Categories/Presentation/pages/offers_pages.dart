@@ -24,7 +24,7 @@ class OffersPages extends StatelessWidget {
               height: 130,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.white,
                 borderRadius: BorderRadius.circular(25),
                 image: DecorationImage(
                   fit: BoxFit.fill,

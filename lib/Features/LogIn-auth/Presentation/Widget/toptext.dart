@@ -8,6 +8,7 @@ class Toptext extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: Text(
+        textAlign: TextAlign.center,
         text,
         style: const TextStyle(
             fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white),

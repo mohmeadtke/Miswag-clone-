@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'core/class/boll.dart';
-
 class Auth extends StatelessWidget {
   const Auth({super.key});
 
@@ -17,12 +15,15 @@ class Auth extends StatelessWidget {
             final user = snapshot.data;
 
             if (user != null) {
-              Future.microtask(
-                  () => Navigator.pushReplacementNamed(context, '/Verifie'));
+              // Navigate to the 'Verifie' page if user is logged in
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                Navigator.pushReplacementNamed(context, '/Verifie');
+              });
             } else {
-              // Navigate to the SignIn page
-              Future.microtask(
-                  () => Navigator.pushReplacementNamed(context, '/LogIn'));
+              // Navigate to the 'LogIn' page if no user is logged in
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                Navigator.pushReplacementNamed(context, '/LogIn');
+              });
             }
           }
 

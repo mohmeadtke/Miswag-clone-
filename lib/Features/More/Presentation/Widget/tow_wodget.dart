@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:miswag/Features/More/Presentation/Widget/row_widget.dart';
-import 'package:miswag/Features/More/Presentation/pages/notifications_page.dart';
 
 class TowWodget extends StatelessWidget {
   final String text1;

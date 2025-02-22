@@ -36,6 +36,5 @@ class BlocBuilderWidget extends StatelessWidget {
         ),
       ],
     );
-    ;
   }
 }

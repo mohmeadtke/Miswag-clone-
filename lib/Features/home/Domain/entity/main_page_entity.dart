@@ -4,8 +4,8 @@ class MainPageEntity {
   final String description;
   final String image;
   final String category;
-  final double price;
-  final double priceAfterDiscount;
+  final int price;
+  final int priceAfterDiscount;
 
   MainPageEntity({
     required this.id,

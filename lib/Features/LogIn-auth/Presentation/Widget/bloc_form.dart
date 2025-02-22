@@ -15,7 +15,7 @@ class BlocForm extends StatelessWidget {
     return BlocConsumer<AuthBloc, AuthState>(
       listener: (context, state) {
         if (state is SuccessState) {
-          Navigator.of(context).pushReplacementNamed('/');
+          Navigator.of(context).pushReplacementNamed('/Verifie');
         }
         if (state is FailureState) {
           ScaffoldMessenger.of(context).showSnackBar(

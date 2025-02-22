@@ -31,18 +31,11 @@ class SectionsListviewWidget extends StatelessWidget {
         width: 70,
         margin: const EdgeInsets.all(8.0),
         decoration: BoxDecoration(
+          image:
+              const DecorationImage(image: AssetImage("assets/image/mis.jpg")),
           color: Colors.grey[200],
           border: Border.all(color: Colors.black),
           borderRadius: BorderRadius.circular(10),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Text(
-              'Item $index',
-              style: const TextStyle(fontSize: 16),
-            ),
-          ],
         ),
       );
     }

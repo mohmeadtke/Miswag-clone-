@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miswag/Features/More/Presentation/Widget/row_widget.dart';
 
-import '../pages/notifications_page.dart';
-
 class OneWidget extends StatelessWidget {
   const OneWidget(
       {super.key,

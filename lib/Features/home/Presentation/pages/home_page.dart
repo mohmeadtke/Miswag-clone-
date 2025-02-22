@@ -6,13 +6,13 @@ import 'package:miswag/Features/home/Presentation/Widget/main_text_widget.dart';
 import 'package:miswag/Features/home/Presentation/Widget/qi_servis.dart';
 import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
 import 'package:miswag/core/Widget/app_bar_widget.dart';
-import 'Features/home/Presentation/Widget/Container_two.dart';
-import 'Features/home/Presentation/Widget/apple_containers.dart';
-import 'Features/home/Presentation/Widget/container_one.dart';
-import 'Features/home/Presentation/Widget/listViewWidget/bloc_builder_widget.dart';
-import 'Features/home/Presentation/Widget/search_bar_widget.dart';
-import 'Features/home/Presentation/Widget/sections_listview_widget.dart';
-import 'Features/home/Presentation/Widget/small_container.dart';
+import '../Widget/Container_two.dart';
+import '../Widget/apple_containers.dart';
+import '../Widget/container_one.dart';
+import '../Widget/listViewWidget/bloc_builder_widget.dart';
+import '../Widget/search_bar_widget.dart';
+import '../Widget/sections_listview_widget.dart';
+import '../Widget/small_container.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
     const BrandListWidgit(),
     const ContainerOne(),
     const MainTextWidget(text: "تسوق الهواتف الذكيه حسب الماركه"),
-    //! phoin list view
+    const BrandListWidgit(),
     const BlocBuilderWidget(text: "تخفيضات الالكترونيات"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),

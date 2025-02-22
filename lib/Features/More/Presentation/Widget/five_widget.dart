@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miswag/Features/More/Presentation/Widget/row_widget.dart';
 import 'package:miswag/Features/More/Presentation/pages/about_us_page.dart';
+import '../../../../core/pages/chat_page.dart';
 import '../pages/miswag_services.dart';
 import '../pages/notifications_page.dart';
 import '../pages/privacy_policy_page.dart';
@@ -44,7 +45,7 @@ class FiveWidget extends StatelessWidget {
           RowWidget(
             iconData: icon1,
             text: text1,
-            widget: const NotificationsPage(),
+            widget: const ChatHelpPage(),
           ),
           _buildDivider(),
           RowWidget(

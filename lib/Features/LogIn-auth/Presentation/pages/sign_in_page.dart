@@ -10,37 +10,31 @@ class SignInPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         body: Stack(
           children: [
             // Background image
-            const Backgrond(),
+            Backgrond(),
 
             // Form content
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // App title
-                const Toptext(text: "Sign in"),
+                Toptext(text: "Sign in"),
 
-                const Spacer(),
+                Spacer(),
                 // Form
-                const BlocForm(buttonText: 'sign-in', x: 0),
+                BlocForm(buttonText: 'sign-in', x: 0),
 
                 // Spacer to push the "Create your account" text to the bottom
-                const Spacer(),
+                Spacer(),
                 // Create Account Text centered at the bottom
-                Undrelinetext(
-                  text: "create your acount",
-                  fun: () {
-                    Navigator.pushNamed(context, '/LogIn');
-                  },
-                )
               ],
             ),
-            const ReturnButton(),
+            ReturnButton(),
           ],
         ),
       ),

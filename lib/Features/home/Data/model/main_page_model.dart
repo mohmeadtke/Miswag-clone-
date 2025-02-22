@@ -20,8 +20,8 @@ class MainPageModel extends MainPageEntity {
       description: json['description'],
       image: json['image'],
       category: json['category'],
-      price: double.parse(json['price']),
-      priceAfterDiscount: double.parse(json['priceAfterDiscount']),
+      price: int.parse(json['price']),
+      priceAfterDiscount: int.parse(json['priceAfterDiscount']),
     );
   }
   // Method to parse a list of products from JSON

@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/Categories/Presentation/pages/categories_page.dart';
 import 'package:miswag/Features/Categories/Presentation/state_mangment/bloc/button_bloc.dart';
 import 'package:miswag/Features/More/Presentation/pages/more_page.dart';
-import 'package:miswag/home_page.dart';
+import 'package:miswag/Features/home/Presentation/pages/home_page.dart';
 
-import 'Features/Cart/Presentation/pages/cart_page.dart';
+import 'Features/Cart/Presentation/pages/temp_cart_page.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -24,7 +24,7 @@ class _MainScreenState extends State<MainScreen> {
       create: (context) => ButtonBloc(),
       child: const CategoriesPage(),
     ),
-    const CartPage(),
+    const TempCartPage(),
     const MorePage(),
   ];
 

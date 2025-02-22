@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Features/home/Domain/entity/main_page_entity.dart';
+import '../../Features/home/Domain/entity/main_page_entity.dart';
 
 class BottomSheetContent extends StatefulWidget {
   const BottomSheetContent({super.key, required this.product});

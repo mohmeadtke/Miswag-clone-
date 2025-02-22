@@ -1,72 +1,107 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:miswag/Features/home/Domain/entity/main_page_entity.dart';
 
-import '../../../../../core/class/boll.dart';
+class LikeButtonWidget extends StatefulWidget {
+  const LikeButtonWidget({super.key, required this.product});
+  final MainPageEntity product;
 
-class LikeButtomWidget extends StatelessWidget {
-  const LikeButtomWidget({super.key, required this.product});
-  final product;
+  @override
+  _LikeButtonWidgetState createState() => _LikeButtonWidgetState();
+}
+
+class _LikeButtonWidgetState extends State<LikeButtonWidget> {
+  bool isLiked = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _checkIfLiked();
+  }
+
+  Future<void> _checkIfLiked() async {
+    User? user = FirebaseAuth.instance.currentUser;
+    if (user != null) {
+      String userId = user.uid;
+      DocumentReference likedItemRef = FirebaseFirestore.instance
+          .collection("users")
+          .doc(userId)
+          .collection("liked_stuff")
+          .doc(widget.product.id);
+
+      DocumentSnapshot snapshot = await likedItemRef.get();
+      if (mounted) {
+        setState(() {
+          isLiked = snapshot.exists;
+        });
+      }
+    }
+  }
+
+  void _toggleLike() async {
+    User? user = FirebaseAuth.instance.currentUser;
+
+    if (user != null) {
+      // Reload the user to update the emailVerified property
+      await user.reload();
+      user = FirebaseAuth.instance.currentUser; // Get the updated user instance
+
+      if (user!.emailVerified) {
+        String userId = user.uid;
+        DocumentReference likedItemRef = FirebaseFirestore.instance
+            .collection("users")
+            .doc(userId)
+            .collection("liked_stuff")
+            .doc(widget.product.id);
+
+        DocumentSnapshot snapshot = await likedItemRef.get();
+
+        if (snapshot.exists) {
+          await likedItemRef.delete();
+          if (mounted) {
+            setState(() {
+              isLiked = false;
+            });
+          }
+        } else {
+          await likedItemRef.set({
+            "itemId": widget.product.id,
+            "timestamp": FieldValue.serverTimestamp(),
+          });
+          if (mounted) {
+            setState(() {
+              isLiked = true;
+            });
+          }
+        }
+      } else {
+        // Email is not verified; navigate to authentication or show a message.
+        Navigator.pushNamed(context, '/auth');
+      }
+    } else {
+      Navigator.pushNamed(context, '/auth');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 4, // Adjusted position
-      right: 4, // Adjusted position
+      bottom: 4,
+      right: 4,
       child: InkWell(
-        onTap: () async {
-          GlobalState().isItCart = false;
-
-          User? user = FirebaseAuth.instance.currentUser;
-
-          if (user != null) {
-            if (user.emailVerified) {
-              if (GlobalState().isItCart == false) {
-                String userId = user.uid; // Get Firebase Auth user ID
-
-                // Reference to Firestore
-                FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-                // Path: users/{userId}/liked_stuff/{itemId}
-                DocumentReference likedItemRef = firestore
-                    .collection("users")
-                    .doc(userId)
-                    .collection("liked_stuff")
-                    .doc(product.id);
-                // Check if the item is already liked
-                DocumentSnapshot snapshot = await likedItemRef.get();
-                // Store the liked item
-                if (snapshot.exists) {
-                  // Item exists, so remove it (Unlike)
-                  await likedItemRef.delete();
-                  print("Item ${product.id} unliked for user $userId");
-                } else {
-                  // Item does not exist, so add it (Like)
-                  await likedItemRef.set({
-                    "itemId": product.id,
-                    "timestamp": FieldValue.serverTimestamp(),
-                  });
-                  print(
-                      "Item ${product.id} saved in liked stuff for user $userId");
-                }
-                return;
-              }
-              Navigator.pushNamed(context, '/auth');
-            }
-            //! add to faiverot
-          }
-        },
+        onTap: _toggleLike,
         child: Container(
           width: 30,
           height: 30,
-          padding: const EdgeInsets.all(4), // Add some padding around the image
+          padding: const EdgeInsets.all(4),
           decoration: BoxDecoration(
-            color: Colors.white, // White background
-            borderRadius:
-                BorderRadius.circular(40), // Optional: Rounded corners
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(40),
           ),
           child: Image.asset(
+            isLiked ? 'assets/image/heartRed.png' : 'assets/image/heart.png',
             fit: BoxFit.fill,
-            'assets/image/heart.png', // Replace with your image path
           ),
         ),
       ),

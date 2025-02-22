@@ -29,17 +29,7 @@ void init() {
   sl.registerFactory(() => MainPageGetData());
   //bloc
   sl.registerFactory(() => MainPageBloc(mainPageUsecase: sl()));
-// //?Create a team
-//   //repo
-//   sl.registerLazySingleton<TeamRepo>(() => TeamRepoImpl(
-//       networkInfo: sl(), addTeamImage: sl(), createTeamDataSource: sl()));
-//   //useCase
-//   sl.registerLazySingleton(() => CreateTeamUseCase(teamRepo: sl()));
-//   //data
-//   sl.registerFactory(() => AddTeamImage());
-//   sl.registerFactory(() => CreateTeamDataSource());
-//   //bloc
-//   sl.registerFactory(() => CreateTeamBloc(createTeamUseCase: sl()));
+
 // //?auth
   //bloc
   sl.registerFactory(() => AuthBloc(

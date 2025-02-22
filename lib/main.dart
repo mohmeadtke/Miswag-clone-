@@ -8,6 +8,7 @@ import 'package:miswag/bottom_bar.dart';
 import 'Features/LogIn-auth/Presentation/pages/sign_in_page.dart';
 import 'Features/LogIn-auth/Presentation/state_mangment/bloc/auth_bloc.dart';
 import 'auth_check.dart';
+import 'core/pages/like_bloc_builder_widget.dart';
 import 'ingectchin.dart' as di;
 
 void main() async {
@@ -44,6 +45,10 @@ class MyApp extends StatelessWidget {
         '/Verifie': (context) => BlocProvider(
               create: (context) => di.sl<AuthBloc>(),
               child: VerifiePage(),
+            ),
+        '/LikedPage': (context) => BlocProvider(
+              create: (context) => di.sl<MainPageBloc>(),
+              child: const LikeBlocBuilderWidget(),
             ),
         // '/mainPage': (context) => const MainPage()
       },

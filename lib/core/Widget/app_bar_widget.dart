@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../pages/chat_page.dart';
+
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
@@ -18,13 +20,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               if (pageNum == 2)
                 InkWell(
                     onTap: () {
-                      //! go to faverot page
+                      //! go to serch page
                     },
                     child: const Icon(Icons.search)),
               if (pageNum == 1)
                 InkWell(
                   onTap: () {
                     //! go to faverot page
+                    Navigator.pushNamed(context, '/LikedPage');
                   },
                   child: Image.asset(
                     "assets/image/heart.png",
@@ -36,7 +39,11 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               if (pageNum == 1 || pageNum == 2)
                 InkWell(
                   onTap: () {
-                    //! go to cat page page
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChatHelpPage()),
+                    );
                   },
                   child: Image.asset(
                     "assets/image/chat.png",

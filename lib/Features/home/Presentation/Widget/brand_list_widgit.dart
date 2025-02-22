@@ -19,18 +19,10 @@ class BrandListWidgit extends StatelessWidget {
               width: 100,
               margin: const EdgeInsets.only(left: 5, bottom: 8),
               decoration: BoxDecoration(
-                color: Colors.blueAccent,
+                image: const DecorationImage(
+                    image: AssetImage("assets/image/mis.jpg")),
+                // color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(12),
-              ),
-              child: Center(
-                child: Text(
-                  'Index: $index',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
               ),
             ),
           );

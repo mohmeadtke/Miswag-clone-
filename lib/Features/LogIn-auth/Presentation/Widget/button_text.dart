@@ -53,11 +53,10 @@ class Button extends StatelessWidget {
         const SnackBar(
           content: Text(
               "u didnt verifie yet "), // Use the state.message as the content
-          duration: Duration(seconds: 8),
+          duration: Duration(seconds: 2),
         ),
       );
-      Navigator.pushNamed(context, '/');
-
+      Navigator.pop(context, '/');
       // Navigator.push(
       //     context,
       //     MaterialPageRoute(

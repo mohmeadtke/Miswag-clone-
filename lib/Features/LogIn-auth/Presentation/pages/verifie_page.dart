@@ -38,10 +38,10 @@ class VerifiePage extends StatelessWidget {
                 const Spacer(),
                 // Create Account Text centered at the bottom
                 Undrelinetext(
-                  text: " back to main page",
+                  text: " sign out",
                   fun: () async {
                     await FirebaseAuth.instance.signOut();
-                    Navigator.pushNamed(context, '/SignIn');
+                    Navigator.pop(context, '/');
                   },
                 )
               ],

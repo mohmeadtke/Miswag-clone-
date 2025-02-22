@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import '../pages/user_page.dart';
 
 class RowWidget extends StatelessWidget {
   const RowWidget({
@@ -44,8 +47,34 @@ class RowWidget extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: () {
-            if (text == "Language" || text == "Gift cards") {
+          onTap: () async {
+            if (text == 'Login or create new account') {
+              User? user = FirebaseAuth.instance.currentUser;
+
+              if (user != null) {
+                // Reload the user to update the emailVerified property
+                await user.reload();
+                user = FirebaseAuth
+                    .instance.currentUser; // Get the updated user instance
+
+                if (user!.emailVerified) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const UserPage()),
+                  );
+                } else {
+                  // Email is not verified; navigate to authentication or show a message.
+                  Navigator.pushNamed(context, '/auth');
+                }
+              } else {
+                Navigator.pushNamed(context, '/auth');
+              }
+              return;
+            }
+            if (text == "Language" ||
+                text == "Gift cards" ||
+                text == "Help Center" ||
+                text == "App Icon") {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
                   content: Text('This feature not implemented yet'),

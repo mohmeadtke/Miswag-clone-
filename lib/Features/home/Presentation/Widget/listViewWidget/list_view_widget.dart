@@ -57,7 +57,7 @@ class ListViewWidget extends StatelessWidget {
                         ),
                         DiscountWidget(product: product),
                         ListButtonWidget(product: product),
-                        LikeButtomWidget(product: product)
+                        LikeButtonWidget(product: product)
                       ],
                     ),
                     BottomHalfWidget(product: product),
