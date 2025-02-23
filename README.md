@@ -10,8 +10,6 @@ Liked Items: Mark items as liked (requires authentication).
 
 Product Search: Search for products using a dummy JSON API call.
 
-Offline Support: Local storage of data for offline use, simulating an API call to fetch products.
-
 Firebase Integration: Firebase is used for user authentication and Firestore for saving cart and liked items online.
 
 ''
@@ -24,3 +22,5 @@ Some UI components are still under development and will be completed in future u
 APK Download
 
 You can download the APK file and try the app on your device
+
+feel free to ask anything
