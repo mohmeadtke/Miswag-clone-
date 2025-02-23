@@ -51,9 +51,8 @@ class HomePage extends StatelessWidget {
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BlocBuilderWidget(text: "الجديد في المنزل والمطبخ"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
-    const SectionsListviewWidget(), //! myby i shoud change this
+    const SectionsListviewWidget(),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),
     const BlocBuilderWidget(text: "العنايه بالفم"),
     const BigContainer(imageUrl: "assets/image/mis.jpg"),

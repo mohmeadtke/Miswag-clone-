@@ -1,93 +1,715 @@
 [
   {
     "id": "1",
-    "name": "Gaming Laptop",
-    "description": "A high-performance laptop for gaming and work.",
-    "image": "assets/image/mis.jpg",
-    "category": "Electronics",
-    "price": "1500",
-    "priceAfterDiscount": "1500"
+    "name": "Glow Radiance Serum",
+    "description": "A high-efficiency serum for glowing and youthful skin.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "156000",
+    "priceAfterDiscount": "15600"
   },
   {
     "id": "2",
-    "name": "Wireless Mouse",
-    "description": "Ergonomic wireless mouse with customizable buttons.",
-    "image": "assets/image/mis.jpg",
-    "category": "Accessories",
-    "price": "50000",
-    "priceAfterDiscount": "50000"
+    "name": "Precision Eyeliner",
+    "description": "A durable eyeliner for precise and smooth application.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "195000",
+    "priceAfterDiscount": "195000"
   },
   {
     "id": "3",
-    "name": "Mechanical Keyboard",
-    "description": "RGB mechanical keyboard with blue switches.",
-    "image": "assets/image/mis.jpg",
-    "category": "Accessories",
-    "price": "100000",
-    "priceAfterDiscount": "100000"
+    "name": "Advanced Hair Treatment",
+    "description": "Hair treatment with advanced technology for healthier .",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "234000",
+    "priceAfterDiscount": "234000"
   },
   {
     "id": "4",
-    "name": "Smartphone",
-    "description": "Latest model smartphone with an amazing camera.",
-    "image": "assets/image/mis.jpg",
-    "category": "Electronics",
-    "price": "200000",
-    "priceAfterDiscount": "200000"
+    "name": "Hydrating Face Mask",
+    "description": "Automatic hydration face mask for soft and fresh skin.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "104000",
+    "priceAfterDiscount": "14000"
   },
   {
     "id": "5",
-    "name": "Gaming Headset",
-    "description": "Wireless headset with surround sound and noise .",
-    "image": "assets/image/chat.png",
-    "category": "Accessories",
-    "price": "500000",
-    "priceAfterDiscount": "500000"
+    "name": "Anti-Aging Cream",
+    "description": "Heavy-duty cream for fast and visible anti-aging results.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "130000",
+    "priceAfterDiscount": "130000"
   },
   {
     "id": "6",
-    "name": "Gaming Mouse",
-    "description": "High-precision gaming mouse with adjustable DPI.",
-    "image": "assets/image/chat.png",
-    "category": "Accessories",
-    "price": "80000",
-    "priceAfterDiscount": "70000"
+    "name": "Deep Repair Hair Mask",
+    "description": "Slow-release hair mask for deeply nourished hair.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "143000",
+    "priceAfterDiscount": "14300"
   },
   {
     "id": "7",
-    "name": "4K Monitor",
-    "description": "27-inch 4K monitor with HDR support.",
-    "image": "assets/image/chat.png",
-    "category": "Electronics",
-    "price": "5000",
-    "priceAfterDiscount": "4000"
+    "name": "Compact Foundation",
+    "description": "Compact foundation with multiple coverage functions.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "97500",
+    "priceAfterDiscount": "97500"
   },
   {
     "id": "8",
-    "name": "External Hard Drive",
-    "description": "2TB portable external hard drive.",
-    "image": "assets/image/chat.png",
-    "category": "Storage",
-    "price": "120000",
-    "priceAfterDiscount": "120000"
+    "name": "Fast-Acting Skin Toner",
+    "description": "High-efficiency skin toner for fast refreshing and .",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "182000",
+    "priceAfterDiscount": "18000"
   },
   {
     "id": "9",
-    "name": "Bluetooth Speaker",
-    "description": "Portable Bluetooth speaker with 20-hour battery .",
-    "image": "assets/image/chat.png",
-    "category": "Accessories",
-    "price": "80000",
-    "priceAfterDiscount": "80000"
+    "name": "Baking Powder Foundation",
+    "description": "Baking powder foundation for a smooth and even finish.",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "260000",
+    "priceAfterDiscount": "260000"
   },
   {
     "id": "10",
-    "name": "Smart Watch",
-    "description": "Smart watch with heart rate monitoring and GPS.",
-    "image": "assets/image/chat.png",
-    "category": "Wearables",
-    "price": "250000",
-    "priceAfterDiscount": "250000"
-  }
+    "name": "Indoor Face Grill",
+    "description": "Electric face grill for indoor skin rejuvenation .",
+    "image": "https://cdn.miswag.me/images/thumbs512/9e234716-bcfd-4c3b-945a-3f53fd863e0d.png",
+    "category": "Cosmetics",
+    "price": "182000",
+    "priceAfterDiscount": "182000"
+  }, {
+      "id": "11",
+      "name": "Gaming Headset",
+      "description": "A high-performance gaming headset for immersive sound.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "104000",
+      "priceAfterDiscount": "104000"
+    },
+    {
+      "id": "12",
+      "name": "Wireless Gaming Mouse",
+      "description": "A durable wireless mouse for precision and control.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "130000",
+      "priceAfterDiscount": "130000"
+    },
+    {
+      "id": "13",
+      "name": "RGB Gaming Keyboard",
+      "description": "A mechanical RGB keyboard for a customizable gaming .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "156000",
+      "priceAfterDiscount": "156000"
+    },
+    {
+      "id": "14",
+      "name": "Gaming Mouse Pad",
+      "description": "A smooth mouse pad for fast and accurate movements.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "52000",
+      "priceAfterDiscount": "52000"
+    },
+    {
+      "id": "15",
+      "name": "Virtual Reality Headset",
+      "description": "An immersive VR headset for next-level gaming experiences.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "195000",
+      "priceAfterDiscount": "195000"
+    },
+    {
+      "id": "16",
+      "name": "Gaming Chair",
+      "description": "An ergonomic gaming chair designed for long gaming .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "260000",
+      "priceAfterDiscount": "260000"
+    },
+    {
+      "id": "17",
+      "name": "Game Controller",
+      "description": "A versatile game controller for smooth gameplay across  .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "78000",
+      "priceAfterDiscount": "78000"
+    },
+    {
+      "id": "18",
+      "name": "Gaming Monitor",
+      "description": "A high-refresh-rate gaming monitor for fluid and clear visuals.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "234000",
+      "priceAfterDiscount": "234000"
+    },
+    {
+      "id": "19",
+      "name": "Gaming PC",
+      "description": "A custom-built gaming PC with high-end components   .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "1560000",
+      "priceAfterDiscount": "1560000"
+    },
+    {
+      "id": "20",
+      "name": "Console Stand",
+      "description": "A sturdy console stand for organizing your gaming setup.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d9e7a7b-30a1-4856-b30c-d6239910bae0.jpg",
+      "category": "Games",
+      "price": "65000",
+      "priceAfterDiscount": "65000"
+    },{
+      "id": "21",
+      "name": "27-Inch 4K Monitor",
+      "description": "A high-performance 27-inch 4K monitor for sharp visuals.",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "390000",
+      "priceAfterDiscount": "390000"
+    },
+    {
+      "id": "22",
+      "name": "Curved UltraWide Monitor",
+      "description": "A 34-inch curved ultra-wide monitor for immersive .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "585000",
+      "priceAfterDiscount": "58500"
+    },
+    {
+      "id": "23",
+      "name": "Portable Touchscreen Monitor",
+      "description": "A portable 15.6-inch touchscreen monitor for on-the-go .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "234000",
+      "priceAfterDiscount": "23400"
+    },
+    {
+      "id": "24",
+      "name": "1080p Full HD Monitor",
+      "description": "A 24-inch full HD monitor with vibrant colors and clear .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "156000",
+      "priceAfterDiscount": "156000"
+    },
+    {
+      "id": "25",
+      "name": "OLED TV Screen",
+      "description": "A 55-inch OLED TV for superior picture quality and .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "1040000",
+      "priceAfterDiscount": "104000"
+    },
+    {
+      "id": "26",
+      "name": "Gaming Monitor 144Hz",
+      "description": "A 27-inch gaming monitor with 144Hz refresh rate   .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "455000",
+      "priceAfterDiscount": "45500"
+    },
+    {
+      "id": "27",
+      "name": "Smart LED TV",
+      "description": "A 43-inch Smart LED TV with built-in streaming apps.",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "325000",
+      "priceAfterDiscount": "32500"
+    },
+    {
+      "id": "28",
+      "name": "Ultra HD Curved Monitor",
+      "description": "A 32-inch Ultra HD curved monitor for professional use.",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "780000",
+      "priceAfterDiscount": "78000"
+    },
+    {
+      "id": "29",
+      "name": "4K TV Screen",
+      "description": "A 65-inch 4K TV screen for the ultimate home theater .",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "1560000",
+      "priceAfterDiscount": "156000"
+    },
+    {
+      "id": "30",
+      "name": "Desktop Monitor Stand",
+      "description": "An adjustable desktop monitor stand for ergonomic ",
+      "image": "https://cdn.miswag.me/images/images/9ddeb9fe-34c5-4a9e-a7e5-0ab6a028bca4.png",
+      "category": "Screens",
+      "price": "65000",
+      "priceAfterDiscount": "65000"
+    },{
+      "id": "31",
+      "name": "Luxury Watch",
+      "description": "A high-end luxury watch for a sophisticated look.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "250000",
+      "priceAfterDiscount": "25000"
+    },
+    {
+      "id": "32",
+      "name": "Sporty Watch",
+      "description": "A durable sporty watch for active lifestyles.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "320000",
+      "priceAfterDiscount": "320000"
+    },
+    {
+      "id": "33",
+      "name": "Smart Watch",
+      "description": "A smart watch with advanced features for daily tracking.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "400000",
+      "priceAfterDiscount": "40000"
+    },
+    {
+      "id": "34",
+      "name": "Fashion Watch",
+      "description": "A stylish fashion watch that complements any outfit.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "160000",
+      "priceAfterDiscount": "160000"
+    },
+    {
+      "id": "35",
+      "name": "Leather Watch",
+      "description": "A classic leather strap watch with timeless appeal.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "190000",
+      "priceAfterDiscount": "19000"
+    },
+    {
+      "id": "36",
+      "name": "Digital Watch",
+      "description": "A modern digital watch for convenience and accuracy.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Watches",
+      "price": "210000",
+      "priceAfterDiscount": "21000"
+    },
+    {
+      "id": "37",
+      "name": "Headphones",
+      "description": "Wireless headphones for a premium audio experience.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Accessories",
+      "price": "150000",
+      "priceAfterDiscount": "15000"
+    },
+    {
+      "id": "38",
+      "name": "Sunglasses",
+      "description": "Stylish sunglasses to protect your eyes with UV protection.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Accessories",
+      "price": "300000",
+      "priceAfterDiscount": "300000"
+    },
+    {
+      "id": "39",
+      "name": "Smartphone Case",
+      "description": "Protective case for your smartphone with a sleek design.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Accessories",
+      "price": "400000",
+      "priceAfterDiscount": "4000"
+    },
+    {
+      "id": "40",
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker for wireless music anywhere.",
+      "image": "https://cdn.miswag.me/images/images/9e0537d7-8391-47d4-b954-799e29840d15.png",
+      "category": "Accessories",
+      "price": "290000",
+      "priceAfterDiscount": "290000"
+    },{
+      "id": "41",
+      "name": "Car Wax Kit",
+      "description": "A complete car wax kit for a shiny, smooth finish.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "72500",
+      "priceAfterDiscount": "72500"
+    },
+    {
+      "id": "42",
+      "name": "Leather Seat Cleaner",
+      "description": "Specialized cleaner for leather seats to keep them soft .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "43500",
+      "priceAfterDiscount": "43500"
+    },
+    {
+      "id": "43",
+      "name": "Car Interior Air Freshener",
+      "description": "Long-lasting air freshener for a pleasant car environment.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "21750",
+      "priceAfterDiscount": "21750"
+    },
+    {
+      "id": "44",
+      "name": "Tire Pressure Gauge",
+      "description": "A reliable tire pressure gauge for accurate readings.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "29000",
+      "priceAfterDiscount": "2900"
+    },
+    {
+      "id": "45",
+      "name": "Portable Car Vacuum",
+      "description": "A compact and powerful vacuum to keep your car clean.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "108750",
+      "priceAfterDiscount": "10850"
+    },
+    {
+      "id": "46",
+      "name": "Car Wash Sponge",
+      "description": "A soft and durable sponge for washing your .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "17400",
+      "priceAfterDiscount": "1740"
+    },
+    {
+      "id": "47",
+      "name": "Car Polish Buffer",
+      "description": "Electric buffer for polishing your car to a perfect shine.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "174000",
+      "priceAfterDiscount": "17400"
+    },
+    {
+      "id": "48",
+      "name": "Engine Cleaner",
+      "description": "A powerful engine cleaner to remove grease and grime.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "58000",
+      "priceAfterDiscount": "5800"
+    },
+    {
+      "id": "49",
+      "name": "Car Detailing Kit",
+      "description": "All-in-one kit for detailing your car with professional tools.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "145000",
+      "priceAfterDiscount": "14500"
+    },
+    {
+      "id": "50",
+      "name": "Windshield Washer Fluid",
+      "description": "Premium windshield washer fluid for clearer visibility.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WGpTJ8ykIki7.jpg",
+      "category": "Car Care",
+      "price": "11600",
+      "priceAfterDiscount": "1160"
+    },{
+      "id": "51",
+      "name": "Chanel No. 5 Eau de Parfum",
+      "description": "A timeless, classic fragrance with floral and woody notes.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "2325000",
+      "priceAfterDiscount": "232500"
+    },
+    {
+      "id": "52",
+      "name": "Dior Sauvage Eau de Toilette",
+      "description": "A fresh, woody fragrance with notes of bergamot and ambroxan.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "1852500",
+      "priceAfterDiscount": "185250"
+    },
+    {
+      "id": "53",
+      "name": "Tom Ford Black Orchid Eau de Parfum",
+      "description": "A luxurious fragrance with dark, floral .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "2170000",
+      "priceAfterDiscount": "217000"
+    },
+    {
+      "id": "54",
+      "name": "Gucci Bloom Eau de Parfum",
+      "description": "A rich floral fragrance featuring notes .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "1745000",
+      "priceAfterDiscount": "174500"
+    },
+    {
+      "id": "55",
+      "name": "Yves Saint Laurent Black Opium",
+      "description": "A modern, sensual fragrance with coffee, .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "2017500",
+      "priceAfterDiscount": "201750"
+    },
+    {
+      "id": "56",
+      "name": "Creed Aventus Eau de Parfum",
+      "description": "A bold and sophisticated fragrance with .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "4350000",
+      "priceAfterDiscount": "435000"
+    },
+    {
+      "id": "57",
+      "name": "Armani Code Eau de Toilette",
+      "description": "A warm, spicy fragrance with hints of tonka bean.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "1747500",
+      "priceAfterDiscount": "174700"
+    },
+    {
+      "id": "58",
+      "name": "Prada Candy Eau de Parfum",
+      "description": "A sweet and gourmand fragrance with notes of caramel.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "1450000",
+      "priceAfterDiscount": "145000"
+    },
+    {
+      "id": "59",
+      "name": "Viktor & Rolf Flowerbomb Eau de Parfum",
+      "description": "A luxurious floral fragrance with notes of jasmine.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "2605000",
+      "priceAfterDiscount": "260500"
+    },
+    {
+      "id": "60",
+      "name": "Calvin Klein Euphoria Eau de Parfum",
+      "description": "A sensual and exotic fragrance with notes of pomegranate.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_6doDAoyJgDn7.jpg",
+      "category": "Fragrances",
+      "price": "1167500",
+      "priceAfterDiscount": "116750"
+    },{
+      "id": "61",
+      "name": "Gaming Laptop",
+      "description": "A high-performance laptop for gaming and work.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Electronics",
+      "price": "1950000",
+      "priceAfterDiscount": "195000"
+    },
+    {
+      "id": "62",
+      "name": "Smartphone",
+      "description": "A cutting-edge smartphone with a sleek design.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Mobile",
+      "price": "1040000",
+      "priceAfterDiscount": "104000"
+    },
+    {
+      "id": "63",
+      "name": "Wireless Headphones",
+      "description": "Noise-cancelling wireless headphones with high sound quality.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Accessories",
+      "price": "325000",
+      "priceAfterDiscount": "32500"
+    },
+    {
+      "id": "64",
+      "name": "4K Smart TV",
+      "description": "A 55-inch smart TV with 4K resolution.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Electronics",
+      "price": "1560000",
+      "priceAfterDiscount": "156000"
+    },
+    {
+      "id": "65",
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with deep bass and long .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Accessories",
+      "price": "130000",
+      "priceAfterDiscount": "13000"
+    },
+    {
+      "id": "66",
+      "name": "Smartwatch",
+      "description": "A smartwatch that tracks your fitness and health.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Wearables",
+      "price": "260000",
+      "priceAfterDiscount": "26000"
+    },
+    {
+      "id": "67",
+      "name": "Gaming Mouse",
+      "description": "High-precision gaming mouse with customizable buttons.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Accessories",
+      "price": "104000",
+      "priceAfterDiscount": "10400"
+    },
+    {
+      "id": "68",
+      "name": "Laptop Stand",
+      "description": "Adjustable laptop stand for a comfortable working .",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Furniture",
+      "price": "65000",
+      "priceAfterDiscount": "6500"
+    },
+    {
+      "id": "69",
+      "name": "Wireless Charger",
+      "description": "Fast wireless charging pad for your devices.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Accessories",
+      "price": "52000",
+      "priceAfterDiscount": "52000"
+    },
+    {
+      "id": "70",
+      "name": "Bluetooth Earbuds",
+      "description": "Compact Bluetooth earbuds with excellent sound quality.",
+      "image": "https://cdn.miswag.me/images/thumbs512/9d4a6c98-53bf-48b9-ba22-c244050ace1d.png",
+      "category": "Accessories",
+      "price": "156000",
+      "priceAfterDiscount": "156000"
+    }, {
+      "id": "71",
+      "name": "Electric Cooker",
+      "description": "A high-efficiency electric cooker for quick and easy .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "195000",
+      "priceAfterDiscount": "195000"
+    },
+    {
+      "id": "72",
+      "name": "Gas Stove",
+      "description": "A durable gas stove for precise temperature control.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "260000",
+      "priceAfterDiscount": "260000"
+    },
+    {
+      "id": "73",
+      "name": "Induction Cooker",
+      "description": "Induction cooker with advanced technology .",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "325000",
+      "priceAfterDiscount": "325000"
+    },
+    {
+      "id": "74",
+      "name": "Rice Cooker",
+      "description": "Automatic rice cooker with keep-warm function.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "130000",
+      "priceAfterDiscount": "130000"
+    },
+    {
+      "id": "75",
+      "name": "Pressure Cooker",
+      "description": "Heavy-duty pressure cooker for fast cooking.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "156000",
+      "priceAfterDiscount": "156000"
+    },
+    {
+      "id": "76",
+      "name": "Slow Cooker",
+      "description": "Slow cooker for tender and flavorful meals.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "169000",
+      "priceAfterDiscount": "16000"
+    },
+    {
+      "id": "77",
+      "name": "Toaster Oven",
+      "description": "Compact toaster oven with multiple cooking functions.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "180000",
+      "priceAfterDiscount": "18000"
+    },
+    {
+      "id": "78",
+      "name": "Blender",
+      "description": "High-speed blender for smoothies and sauces.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Appliances",
+      "price": "95000",
+      "priceAfterDiscount": "9500"
+    },
+    {
+      "id": "79",
+      "name": "Electric Griddle",
+      "description": "Large surface electric griddle for cooking pancakes and eggs.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Cookers",
+      "price": "210000",
+      "priceAfterDiscount": "21000"
+    },
+    {
+      "id": "80",
+      "name": "Coffee Maker",
+      "description": "Automatic coffee maker with programmable timer.",
+      "image": "https://cdn.miswag.me/images/thumbs512/miswag_WzpXOXpAS5Mw.jpg",
+      "category": "Appliances",
+      "price": "140000",
+      "priceAfterDiscount": "14000"
+    }
 ]
-

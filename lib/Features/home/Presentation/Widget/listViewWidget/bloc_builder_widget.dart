@@ -20,6 +20,7 @@ class BlocBuilderWidget extends StatelessWidget {
             }
             if (state is SuccessState) {
               List data = state.mainPageEntity;
+              print(data);
               return ListViewWidget(data: data);
             }
             if (state is FailureState) {

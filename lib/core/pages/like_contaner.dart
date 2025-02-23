@@ -53,8 +53,8 @@ class _LikeContanerState extends State<LikeContaner> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
-              child: Image.asset(
-                'assets/image/heart.png',
+              child: Image.network(
+                widget.prodcet.image,
                 width: 80,
                 height: 100,
                 fit: BoxFit.cover,

@@ -1,4 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:miswag/Features/serch/presentation/serch_page.dart';
 
 import '../pages/chat_page.dart';
 
@@ -20,14 +23,29 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               if (pageNum == 2)
                 InkWell(
                     onTap: () {
-                      //! go to serch page
+                      Navigator.pushNamed(context, '/SerchPage');
                     },
                     child: const Icon(Icons.search)),
               if (pageNum == 1)
                 InkWell(
-                  onTap: () {
-                    //! go to faverot page
-                    Navigator.pushNamed(context, '/LikedPage');
+                  onTap: () async {
+                    User? user = FirebaseAuth.instance.currentUser;
+
+                    if (user != null) {
+                      // Reload the user to update the emailVerified property
+                      await user.reload();
+                      user = FirebaseAuth.instance
+                          .currentUser; // Get the updated user instance
+
+                      if (user!.emailVerified) {
+                        Navigator.pushNamed(context, '/LikedPage');
+                      } else {
+                        // Email is not verified; navigate to authentication or show a message.
+                        Navigator.pushNamed(context, '/auth');
+                      }
+                    } else {
+                      Navigator.pushNamed(context, '/auth');
+                    }
                   },
                   child: Image.asset(
                     "assets/image/heart.png",
@@ -55,7 +73,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               if (pageNum == 3)
                 InkWell(
                     onTap: () {
-                      //! go to ser page page
+                      Navigator.pushNamed(context, '/SerchPage');
                     },
                     child: const Icon(
                       Icons.search,

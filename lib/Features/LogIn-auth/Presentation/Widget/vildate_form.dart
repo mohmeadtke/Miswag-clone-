@@ -13,9 +13,9 @@ class Vildateform {
   }
 
   // Password validation function
-  String? validatePassword(String? value) {
+  String? validatePassword(String? value, text) {
     if (value == null || value.isEmpty) {
-      return 'Please enter a password';
+      return text;
     }
     if (value.length < 6) {
       return ' must be at least 6 characters';

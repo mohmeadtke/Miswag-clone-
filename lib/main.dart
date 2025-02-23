@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/LogIn-auth/Presentation/pages/log_in_page.dart';
 import 'package:miswag/Features/LogIn-auth/Presentation/pages/verifie_page.dart';
 import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
+import 'package:miswag/Features/serch/presentation/serch_page.dart';
 import 'package:miswag/bottom_bar.dart';
 import 'Features/LogIn-auth/Presentation/pages/sign_in_page.dart';
 import 'Features/LogIn-auth/Presentation/state_mangment/bloc/auth_bloc.dart';
@@ -49,6 +50,10 @@ class MyApp extends StatelessWidget {
         '/LikedPage': (context) => BlocProvider(
               create: (context) => di.sl<MainPageBloc>(),
               child: const LikeBlocBuilderWidget(),
+            ),
+        '/SerchPage': (context) => BlocProvider(
+              create: (context) => di.sl<MainPageBloc>(),
+              child: const SearchPage(),
             ),
         // '/mainPage': (context) => const MainPage()
       },

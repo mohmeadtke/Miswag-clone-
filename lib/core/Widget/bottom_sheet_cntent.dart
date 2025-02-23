@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../Features/home/Domain/entity/main_page_entity.dart';
@@ -63,7 +65,7 @@ class BottomSheetContentState extends State<BottomSheetContent> {
           const SizedBox(height: 8),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Container(
@@ -76,7 +78,7 @@ class BottomSheetContentState extends State<BottomSheetContent> {
                       width: 70,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage(product.image))),
+                              image: NetworkImage(product.image))),
                     ),
                     SizedBox(
                       height: 20,
@@ -193,8 +195,18 @@ class BottomSheetContentState extends State<BottomSheetContent> {
               const SizedBox(width: 16), // Space between the buttons
 
               GestureDetector(
-                onTap: () {
-                  //! add to cart
+                onTap: () async {
+                  User? user = FirebaseAuth.instance.currentUser;
+                  String userId = user!.uid;
+                  DocumentReference listItemRef = FirebaseFirestore.instance
+                      .collection("users")
+                      .doc(userId)
+                      .collection("list_stuff")
+                      .doc(widget.product.id);
+                  await listItemRef.set({
+                    "itemCount": itemCount,
+                  });
+                  Navigator.pop(context);
                 },
                 child: Container(
                   width: 180,

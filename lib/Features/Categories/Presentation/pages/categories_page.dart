@@ -17,15 +17,15 @@ class CategoriesPage extends StatefulWidget {
 class _CategoriesPageState extends State<CategoriesPage> {
   List<Widget> ui = [
     OffersPages(),
-    BeautyPage(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx(),
-    const Exxx()
+    const BeautyPage(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
+    const CircularProgressIndicator(),
   ];
   int selectedIndex = 0; // Store the selected index
   List<String> imagis = [

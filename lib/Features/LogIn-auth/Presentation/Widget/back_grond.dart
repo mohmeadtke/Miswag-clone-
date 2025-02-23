@@ -20,11 +20,7 @@ class Backgrond extends StatelessWidget {
           Container(
             height: double.infinity,
             width: double.infinity,
-            decoration: const BoxDecoration(
-                gradient: LinearGradient(colors: [
-              Color.fromARGB(240, 23, 5, 159),
-              Color.fromARGB(255, 0, 0, 0)
-            ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+            color: Colors.grey[300],
           ),
         ],
       ),

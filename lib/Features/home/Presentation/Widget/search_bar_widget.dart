@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class SearchBarWidget extends StatelessWidget {
   const SearchBarWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return // Search bar
@@ -12,7 +11,7 @@ class SearchBarWidget extends StatelessWidget {
       color: Colors.white,
       child: GestureDetector(
         onTap: () {
-          //! rout to serch page
+          Navigator.pushNamed(context, '/SerchPage');
         },
         child: Padding(
           padding: const EdgeInsets.only(left: 10, right: 10),

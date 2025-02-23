@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:miswag/Features/home/Presentation/state_mangment/bloc/main_page_bloc.dart';
 import 'package:miswag/core/Widget/app_bar_widget.dart';
-import 'cart_page.dart';
+import '../pages/cart_page.dart';
 
 class CartBlocBuilderWidget extends StatelessWidget {
   const CartBlocBuilderWidget({super.key});
@@ -10,7 +10,7 @@ class CartBlocBuilderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const AppBarWidget(pageNum: 3),
+      appBar: const AppBarWidget(pageNum: 2),
       body: BlocBuilder<MainPageBloc, MainPageState>(
         builder: (context, state) {
           if (state is LodingState) {

@@ -49,7 +49,7 @@ class ListViewWidget extends StatelessWidget {
                             ),
                             image: DecorationImage(
                                 fit: BoxFit.fill,
-                                image: AssetImage(product.image)
+                                image: NetworkImage(product.image)
                                 // NetworkImage(
                                 //     product.image) // Placeholder image
                                 ),

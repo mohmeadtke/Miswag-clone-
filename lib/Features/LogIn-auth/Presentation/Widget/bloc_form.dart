@@ -8,14 +8,18 @@ class BlocForm extends StatelessWidget {
   const BlocForm({super.key, required this.buttonText, required this.x});
   final String buttonText;
   final int x;
-  //Happe New Year
-  //happe the next day of the new year
+
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AuthBloc, AuthState>(
       listener: (context, state) {
         if (state is SuccessState) {
-          Navigator.of(context).pushReplacementNamed('/Verifie');
+          if (x == 0) {
+            Navigator.pop(context, '/');
+            Navigator.pop(context, '/');
+          } else {
+            Navigator.of(context).pushReplacementNamed('/Verifie');
+          }
         }
         if (state is FailureState) {
           ScaffoldMessenger.of(context).showSnackBar(

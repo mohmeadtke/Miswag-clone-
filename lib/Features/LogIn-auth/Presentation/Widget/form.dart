@@ -31,7 +31,8 @@ class Formm extends StatelessWidget {
             TextFiled(
               controller: _nameController,
               validator: (value) {
-                return vildateform.validatePassword(value);
+                return vildateform.validatePassword(
+                    value, 'Please enter a name');
               },
               labilText: 'Enter your name',
             ),
@@ -47,7 +48,8 @@ class Formm extends StatelessWidget {
           TextFiled(
             controller: _passwordController,
             validator: (value) {
-              return vildateform.validatePassword(value);
+              return vildateform.validatePassword(
+                  value, 'Please enter a password');
             },
             labilText: 'Enter your Password',
           ),
