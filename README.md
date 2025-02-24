@@ -23,4 +23,6 @@ APK Download
 
 You can download the APK file and try the app on your device
 
+I just want to mention that the project I didn't finish yet and there's some code that not efficient but u can compare some code like the auth feature that is  have efficient code
+
 feel free to ask anything
